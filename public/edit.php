@@ -22,7 +22,7 @@ if ($id) {
 
 <body>
     <section id="input">
-        <div class="container border max-w-[1000px] mx-auto h-[100vh] flex flex-col justify-center items-center">
+        <div class="container border max-w-[1000px] h-[100vh] mx-auto flex flex-col justify-center items-center">
             <h1 class="font-bold text-3xl mb-8">Edit Data Mahasiswa</h1>
             <form action="proses_update.php?id= <?php echo $id ?>" method="POST" class="flex flex-col gap-4">
                 <div>

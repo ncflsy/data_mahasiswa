@@ -21,10 +21,10 @@ $result = mysqli_query($koneksi, $query);
 
             </div>
             <div>
-                <a href="input.php" class="bg-green-600 px-4 py-2 rounded-lg">Tambah</a>
+                <a href="input.php" class="bg-green-600 px-4 py-2 rounded-lg text-white">Tambah</a>
                 <table class="w-full mt-4">
                     <thead>
-                        <tr class="bg-green-400">
+                        <tr class="bg-blue-600 text-white">
                             <th class="border border-gray-500 py-2">ID</th>
                             <th class="border border-gray-500 py-2">Nama</th>
                             <th class="border border-gray-500 py-2">NIM</th>
@@ -37,11 +37,11 @@ $result = mysqli_query($koneksi, $query);
                         while ($row = mysqli_fetch_assoc($result)) {
                         ?>
                             <tr>
-                                <th class="border border-gray-500 py-2"><?php echo $row['id'] ?></th>
-                                <th class="border border-gray-500 py-2"><?php echo $row['nama'] ?></th>
-                                <th class="border border-gray-500 py-2"><?php echo $row['nim'] ?></th>
-                                <th class="border border-gray-500 py-2"><?php echo $row['prodi'] ?></th>
-                                <th class="border border-gray-500 py-2">
+                                <th class="border border-gray-500 py-2 font-light"><?php echo $row['id'] ?></th>
+                                <th class="border border-gray-500 py-2 font-light"><?php echo $row['nama'] ?></th>
+                                <th class="border border-gray-500 py-2 font-light"><?php echo $row['nim'] ?></th>
+                                <th class="border border-gray-500 py-2 font-light"><?php echo $row['prodi'] ?></th>
+                                <th class="border border-gray-500 py-2 font-light">
                                     <a href="edit.php?id=<?php echo $row['id']; ?>" class="bg-green-200 px-4 py-2 rounded-lg">Edit</a>
                                     <a href="proses_delete.php?id=<?php echo $row['id']; ?>" class="bg-red-200 px-4 py-2 rounded-lg">Hapus</a>
                                 </th>
